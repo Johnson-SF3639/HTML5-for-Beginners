@@ -1,0 +1,6 @@
+.newShape{
+    fill: rgb(255, 37, 37);
+}
+.logo:hover .newShape{
+    fill: rgb(111, 255, 0);
+}

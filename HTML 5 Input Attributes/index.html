@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website!</h1>
+    </header>
+
+    <section>
+        <form action="">
+            <p>The Number Input box : </p>
+            <input type="number" min="10" max="20" step="2">
+            <hr>
+            <p>The Range Box : </p>
+            <input type="range" min="0" max="100" value="10"/>
+            <hr>
+            <p>The Date picker</p>
+            <input type="date" value="2022-10-11" min='2022-10-01' "/>
+            <hr>
+            <p>The Color Picker</p>
+            <input type="color"/>
+            <hr>
+            <p>The Data List</p>
+            <input type="text" list="inputList">
+                <datalist id="inputList">
+                    <option value="1" label="Value 1"></option>
+                    <option value="2" label="Value 2"></option>
+                    <option value="3" label="Value 3"></option>
+                </datalist>
+            <hr>
+            <p>The Email Text Box</p>
+            <input type="email" required/>
+            <hr>
+            <p>The URL Text Box</p>
+            <input type="url"/>
+            <hr>
+            <p>The tel Text Box</p>
+            <input type="tel"/>
+            <hr>
+            <p>The Search Box</p>
+            <input type="search"/>
+            <hr>
+            <p>The Text Box</p>
+            <input type="text" placeholder="Enter you Name" pattern="[a-zA-Z]*" required/>
+            <hr>
+            <p>Submit Button</p>
+            <input type="submit">
+            <hr>
+        </form>
+    </section>
+    
+    <aside>
+    </aside>
+
+    <footer>
+        <p>Copyright syncfusion @2022</p>
+    </footer>
+</body>
+</html>
