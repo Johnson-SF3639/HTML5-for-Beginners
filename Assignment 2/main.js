@@ -183,7 +183,7 @@ function SubText() {
                     c.font = `${bottomTextIcon.textSize}px Segoe UI`;
                     c.fillText(`${word[i]}`, bottomText.x+(uniqueSpace*i), bottomText.y, 800);
                     c.font = `${bottomTextIcon.size}px Handel Gothic D`;
-                },1)
+                },15)
             }
             if(i == word.length-1){
                 c.fillText('®', bottomTextIcon.x, bottomTextIcon.y);
@@ -249,7 +249,6 @@ function reduceSize() {
     setTimeout(() => {
         SubText();
     }, 200);
-
 }
 
 update();
