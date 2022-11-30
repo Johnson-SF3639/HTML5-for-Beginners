@@ -15,12 +15,12 @@
                 <div>
                 <p class="heading">Contact Us</p>
                 <p class="text">Contact us today, and get replay with in 24 hours!</p>
-                <form onsubmit="return false">
-                    <input type="text" placeholder="Enter your name" id="name" pattern="[a-zA-Z]+"  required/>
-                    <input type="email" placeholder="Enter your Email Address" id="address" pattern="[a-z]+@[a-z]+\.[a-z]+"  required />
-                    <input type="tel" placeholder="Enter your Phone #" id="phone" pattern="\d{1}-\d{3}-\d{3}-\d{3}" required/>
-                    <input type="url" placeholder="Enter your Web Site" id="website" pattern="^https.*" required/>
-                    <input type="text" placeholder="Enter your message:" id="message" pattern=".{1,140}" required/>
+                <form onsubmit="return StoreData()">
+                    <input type="text" placeholder="Enter your name"  pattern="[a-zA-Z]+"  id="name" required/>
+                    <input type="email" placeholder="Enter your Email Address" pattern="[a-z]+@[a-z]+\.[a-z]+"  id="address"  required />
+                    <input type="tel" placeholder="Enter your Phone #"  pattern="\d{1}-\d{3}-\d{3}-\d{3}" id="phone" required/>
+                    <input type="url" placeholder="Enter your Web Site"  pattern="^https.*"  id="website"/>
+                    <input type="text" placeholder="Enter your message:"  pattern=".{1,140}" id="message" required/>
                     <input type="submit" id="submitBtn"/>
                 </form>
                 </div>

@@ -1,9 +1,9 @@
-function DoFirst(){
-    var button = document.getElementById('submitBtn');
-    button.addEventListener("click", StoreData, false);
-    Display();
-}
-function Store(name,address,phone,website,message){
+// function DoFirst(){
+//     var button = document.getElementById('submitBtn');
+//     button.addEventListener("click", StoreData, false);
+//     Display();
+// }
+function DataStore(name ,address,phone,website,message){
     this.username = name;
     this.address = address;
     this.phone = phone;
@@ -12,19 +12,23 @@ function Store(name,address,phone,website,message){
 }
 
 function StoreData(){
+
     var username = document.getElementById('name').value;
     var address = document.getElementById('address').value;
     var phone = document.getElementById('phone').value;
     var website = document.getElementById('website').value;
     var message = document.getElementById('message').value;
-    var data = new Store(username, address, phone, website, message);
+
+    var data = new DataStore(username, address, phone, website, message);
     sessionStorage.setItem(username,JSON.stringify(data));
-    Display();
+
     document.getElementById('name').value= "";
     document.getElementById('address').value= "";
     document.getElementById('phone').value= "";
     document.getElementById('website').value= "";
     document.getElementById('message').value= "";
+
+    Display();
 }
 function Display(){
     var show = document.getElementById('show');
@@ -42,4 +46,4 @@ function Display(){
     }
 }
 
-window.addEventListener("load", DoFirst, false);
+window.addEventListener("load", Display, false);
